@@ -1,0 +1,125 @@
+.navbar {
+    display: flex;
+    list-style: none;
+    font-size:20px;
+    align-items: center;
+}
+.navbar li {
+    padding: 0 20px;
+}
+.navbar li a {
+    transition: 0.3s ease;
+}
+.header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 80px;
+    background-color: hsl(75, 4%, 80%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    color: #1a1a1a;
+    width:100%;
+    position: sticky;
+    top:1px;
+    z-index: 999;
+}
+.header a {
+    cursor:pointer;
+}
+.navbar a:hover, .navbar a.active {
+    color:#088178;
+    border-bottom: 1px solid  #088178;
+}
+
+.header .left {
+    display:flex;
+    gap:60px;
+}
+.left a {
+    height:25px;
+    width:100px;
+}
+.search-cart {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+
+img {
+    width: 100%;
+    height:100%;
+}
+.menu {
+    display: none;
+}
+/* From Uiverse.io by garerim */ 
+.container-input {
+    position: relative;
+  }
+  
+  .input {
+    width: 150px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    border: solid 1px #333;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
+  }
+  
+  .container-input svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+  }
+  
+  .input:focus {
+    opacity: 1;
+    width: 250px;
+  }
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: -14px;
+    height: 100vh;
+    width: 260px;
+    z-index: 999;
+    background-color: hsla(0, 0%, 30%, 0.549);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+  }
+  
+  .sidebar li {
+    cursor: pointer;
+    padding: 10px;
+    list-style: none;
+    width: 100%;
+  }
+
+  @media (max-width: 1000px) {
+    .menu {
+        display: block;
+    }
+    .navbar {
+        display:none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header {
+        flex-direction:column;
+        gap:10px;
+
+    }
+    .search-cart {
+
+        width:100vw;
+        justify-content: space-evenly;
+    }
+  }
