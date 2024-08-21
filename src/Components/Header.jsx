@@ -1,3 +1,4 @@
+import logo from "../assets/images/brand.logo.png"
 
 
 import "./header.css";
@@ -20,7 +21,7 @@ const handleOtherClick = () => {
             
             <section className="header">
                 <div className="left">
-                <a href="#"><img src="src\assets\images\brand.logo.png" alt="brand_logo" /></a>
+                <a href="#"><img src={logo} alt="brand_logo" /></a>
                     <ul className="navbar">
                         <li><a className="active">Home</a></li>
                         <li><a>About</a></li>

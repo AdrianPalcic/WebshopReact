@@ -1,20 +1,7 @@
 body {
     background-color: white;
 }
-.hero-section {
-   height: 100vh;
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-    background-image: url("src/assets/images/hero3.jpg");
-    background-size: cover; 
-    background-position: right 20% top 20%;
-    background-repeat: no-repeat;
-    padding: 0 80px;
-    align-items:start;
-    justify-content: center;
-    color: #000000;
-}
+
 
 .hero-section p {
     font-size: 20px;

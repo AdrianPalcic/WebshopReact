@@ -4,8 +4,7 @@ import sectionImage1 from "../assets/images/feature_section_1.png";
 import sectionImage2 from "../assets/images/feature_section_2.png";
 import sectionImage3 from "../assets/images/feature_section_3.png";
 import sectionImage4 from "../assets/images/feature_section_4.png";
-
-
+import heropic from "../assets/images/hero3.jpg"
 import productImage1 from "../assets/images/clothes1.jpg";
 import productImage2 from "../assets/images/clothes2.jpg";
 import productImage3 from "../assets/images/clothes3.jpg";
@@ -15,6 +14,7 @@ import productImage6 from "../assets/images/clothes6.jpg";
 import productImage7 from "../assets/images/clothes7.jpg";
 import productImage8 from "../assets/images/clothes8.jpg";
 import productImage9 from "../assets/images/clothes9.jpg";
+import banner from "../assets/images/banner.avif"
 function Home() {
 
     const fetatureData = [
@@ -100,11 +100,27 @@ function Home() {
         },
      
     ]
+    const heroBackground = {
+       backgroundImage : `url(${heropic})`,
+       height: '110vh',
+       display: 'flex',
+       flexDirection: 'column',
+       gap: '20px',
+       backgroundSize: 'cover',
+       backgroundPosition: 'top 10% right: 0%',
+       backgroundRepeat: 'no-repeat',
+       padding: '0 80px',
+       alignItems: 'flex-start',
+       justifyContent: 'center',
+       color: '#000000',
+    }
 
-
+    const bannerBackground = {
+        backgroundImage: `url(${banner})`,
+    }
     return (
       <>
-<section class="hero-section">
+<section class="hero-section" style={heroBackground}>
 <h3>Nova Izdanja, Svake Sezone</h3>
 <h1>Redefinirajte Svoj Stil Danas</h1>
 <p>Istražite našu pažljivo odabranu kolekciju i pronađite komade koji čine svaki outfit nezaboravnim.</p>
@@ -165,7 +181,7 @@ function Home() {
         </div>
      
 </section>
-<section className="call-to-action">
+<section className="call-to-action" style={bannerBackground}>
          <h2>Usluge popravka</h2>
          <h1>DO <span>70% Popusta</span> na majice i dodatke</h1>
         <button className="banner-explore">Pogledaj više</button>
