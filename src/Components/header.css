@@ -20,7 +20,7 @@
     color: #1a1a1a;
     width:100%;
     position: sticky;
-    top:1px;
+    top:0.1px;
     z-index: 999;
 }
 .header a {
@@ -113,13 +113,20 @@ img {
 
   @media (max-width: 480px) {
     .header {
-        flex-direction:column;
+        
         gap:10px;
-
+    }
+    .left {
+        width:100vw;
+        align-items: center;
+        justify-content: end;
     }
     .search-cart {
 
         width:100vw;
-        justify-content: space-evenly;
+        justify-content: end;
+    }
+    .search-cart input, svg{
+        display:none;
     }
   }

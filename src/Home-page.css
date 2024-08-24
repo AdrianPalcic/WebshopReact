@@ -2,7 +2,9 @@ body {
     background-color: white;
 }
 
-
+.sec-pad {
+    padding: 40px 80px;
+}
 .hero-section p {
     font-size: 20px;
 }
@@ -161,6 +163,7 @@ p {
     align-items: center;
     justify-content: center;
     width: 13%;
+    height:450px;
     min-width: 280px;
     padding: 10px 12px;
     border-radius: 25px;
@@ -175,12 +178,14 @@ p {
     box-shadow: 10px 0px 14px rgba(0,0,0,0.13);
 }
 .pro .desc {
+
+    width:100%;
     text-align: start;
     padding: 10px 0;
 }
 .pro .desc span {
     color: #606063;
-    font-size:12px;
+    font-size:14px;
 }
 .pro img {
     width:100%;
@@ -202,6 +207,7 @@ p {
     position:relative;
 }
 .call-to-action {
+    border: 1px solid black;
     width:100vw;
     padding: 40px 80px;
     display:flex;
@@ -210,11 +216,11 @@ p {
     align-items: center;
     text-align: center;
     color:white;
-    background-image: url("src/assets/images/banner.avif");
     width: 100%;
     height: 40vh;
     background-size: cover;
-    background-position: center;
+    background-position: top 400%;
+
 }
 .call-to-action h1 {
     font-size:50px;
@@ -275,21 +281,241 @@ p {
    .call-to-action span {
     color: #088178
    }
-/*
-.prod-box .desc .cart-btn{
-    width:40px;
-    height:40px;
+
+.prod-box .cart-btn{
+    width:50px;
+    height:50px;
     line-height:40px;
     border-radius:50px;
-        background-color:#e8f6ea;
+    background-color:#e8f6ea;
     font-weight: 500;
     color: #088178;
     border: 1px solid #cce7d0;
     position:absolute;
     bottom: 20px;
     right: 10px;
-*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition:  0.4s ease;
+}
+.prod-box .cart-btn:hover {
 
+    background-color: #083c38;
+
+}
+.small-box {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.banner-box, .small-box {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px; 
+    min-width: 40vw;
+    height:50vh;
+    background-size: cover;
+    background-position: center;
+
+}
+.bimbo {
+    display:flex;
+    gap:10px;
+   flex-wrap:wrap;
+   justify-content: space-between;
+}
+.banner-box h2{
+    font-size: 50px;
+    color: white;
+    font-weight: 300;
+}
+.banner-box  h1{
+   font-size: 60px;
+   color:white;
+   font-weight: 700;
+}
+.banner-box p {
+    color:white;
+    font-size:18px;
+    font-weight: 15px;
+    font-weight:500;
+
+}
+.banner-box p {
+    font-size: 22px;
+}
+.banner-box .box-btn {
+    font-size: 16px;
+    font-weight: 600px;
+    padding: 11px 18px;
+    color:white;
+    background-color: transparent;
+    cursor:pointer; 
+    border: 1px solid white;
+    outline:none;
+    transition: 0.4s ease;
+}
+.banner-box .box-btn:hover {
+    background-color: #088178;
+    border:none;
+    font-size:18px;
+}
+.bombi .small-box {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-width: 30%;
+    height:30vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+.bombi .small-box h2 {
+        color:  white;
+        font-weight: 900;
+        font-size:22px;
+
+}
+.bombi .small-box h3 {
+    color:  #ec544e;
+    font-weight: 800;
+    font-size:16px;
+}
+.bombi {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    padding: 0 80px;
+}
+.comeandvisit {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    align-items: center;
+    background: rgb(9,9,112);
+    background: linear-gradient(90deg, rgba(9,9,112,1) 0%, rgba(9,11,110,1) 2%, rgba(12,79,113,1) 37%, rgba(12,96,113,1) 66%, rgba(12,96,113,1) 93%);
+    height:230px;
+    margin: 15px 20px;
+}
+.comeandvisit div {
+    flex:1;
+}
+.comeandvisit .posjeti-text h2 {
+font-size: 50px;
+color:white;
+font-weight: 700;
+}
+.comeandvisit .posjeti-text p { 
+    font-size: 20px;
+    font-weight:400;
+    color:#1a1a1a;
+}
+.adresa {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.comeandvisit .adresa  svg {
+   width:100%;
+   height: 100%;
+
+
+}
+.comeandvisit .adresa input {
+    height: 45px;
+    text-align: center;
+    padding:12px 0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:70%;
+    flex:1;
+    margin:15px 15px;
+    border-radius: 10px;
+    background-color: white;
+
+}
+.comeandvisit .adresa input::placeholder {
+    font-size:24px;
+    font-weight:500;
+    color: #1a1a1a;
+    padding:10px 0px;
+
+}
+.comeandvisit .posjeti-text span {
+    font-size: 24px;
+    color:hsl(39, 100%, 45%);
+}
+
+footer img {
+    height:45px;
+    width:140px;
+}
+footer img:nth-child(5) {
+    width:250px;
+}
+footer {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    
+}
+footer .col{
+    display:flex;
+    align-items: flex-start;
+    margin-bottom:20px;
+    flex-direction: column;
+
+}
+footer .logo {
+    margin-bottom: 30px;
+}
+footer h2 {
+    font-size: 28px;
+    padding-bottom:20px;
+}
+footer p {
+    font-size:20px;
+    margin: 0 0 8px 0;
+    color: #222;
+    margin-bottom:10px;
+}
+footer a {
+    font-size:18px;
+    text-decoration: none;
+    color: #1a1a1a;
+    margin-bottom:15px;
+}
+footer .follow {
+    margin-top:20px;
+
+}
+footer .follow i {
+    color: #1a1a1a;
+    font-size:28px;
+    padding-right: 8px;
+    cursor:pointer;
+}
+footer .npm-i img {
+    margin : 10px 0 15px 0;
+    cursor:pointer
+}
+footer .follow i:hover {
+    color: #088178;
+}
+footer a:hover {
+    color: #088178;
+}
+footer .cr  {
+    width: 100%;
+    text-align:center;
+}
   @media (max-width: 1000px) {
     .hero-section {
         align-items: center;
@@ -319,7 +545,19 @@ p {
     }
     
   }
+  
   @media (max-width: 420px) { 
+    body {
+        width: 100vw;
+    }
+    .hero-section {
+        text-align:center;
+    }
+    .hero-section h1 {
+        position:relative;
+        right:35px;
+    }
+
     .call-to-action h1 {
         font-size:40px;
     }
