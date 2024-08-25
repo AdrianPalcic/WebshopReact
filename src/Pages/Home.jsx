@@ -315,7 +315,7 @@ function Home() {
         <a href="#">O nama</a>
         <a href="#">Dostava</a>
         <a href="#">Uvjeti i Odredbe</a>
-        <a href="#">Kako Štitimo Vašu Privatnost</a>
+        <a href="#">Štitimo Vašu Privatnost</a>
         <a href="#">Kontaktiraj nas</a>
     </div>
 
