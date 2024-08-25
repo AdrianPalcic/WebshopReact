@@ -11,7 +11,13 @@ body {
 
 .hero-section h1 {
     font-size: 50px;
-    color: #088178;
+    
+}
+.hero-section h1 span {
+    color: hsl(176, 88%, 37%);
+}
+.hero-section h3 {
+    font-size: 26px;
 }
 p {
     font-size: 30px;
@@ -162,15 +168,16 @@ p {
     flex-wrap:wrap;
     align-items: center;
     justify-content: center;
-    width: 13%;
-    height:450px;
+    width: 23%;
+    min-width:250px;
+    height: 460px;
     min-width: 280px;
     padding: 10px 12px;
     border-radius: 25px;
     border: 1px solid #cce7d0;
     cursor:pointer;
     transition: 0.2 ease;
-    margin: 15px 15px ;
+    margin: 15px 0 ;
     box-shadow: 10px 0px 14px rgba(0,0,0,0.1);
 
 }
@@ -282,13 +289,12 @@ p {
     color: #088178
    }
 
-.prod-box .cart-btn{
-    width:50px;
+.prod-box .pro .cart-btn{
+     width:50px;
     height:50px;
     line-height:40px;
     border-radius:50px;
     background-color:#e8f6ea;
-    font-weight: 500;
     color: #088178;
     border: 1px solid #cce7d0;
     position:absolute;
@@ -297,10 +303,10 @@ p {
     display:flex;
     align-items: center;
     justify-content: center;
-    transition:  0.4s ease;
+    transition:  0.4s ease; 
 }
 .prod-box .cart-btn:hover {
-
+    color:white;
     background-color: #083c38;
 
 }
@@ -315,7 +321,7 @@ p {
     justify-content: center;
     align-items: flex-start;
     padding: 30px; 
-    min-width: 40vw;
+    min-width: 580px;
     height:50vh;
     background-size: cover;
     background-position: center;
@@ -323,7 +329,7 @@ p {
 }
 .bimbo {
     display:flex;
-    gap:10px;
+
    flex-wrap:wrap;
    justify-content: space-between;
 }
@@ -516,53 +522,121 @@ footer .cr  {
     width: 100%;
     text-align:center;
 }
-  @media (max-width: 1000px) {
-    .hero-section {
-        align-items: center;
-        background-position: center;
-
+@media (max-width: 799px) {
+    .sec-pad {
+        padding: 40px 40px;
     }
-  }
-  @media (max-width:720px) {
-    .prod-box {
-        justify-content: center;
+    .hero-section {
+        height: 70vh;
+        padding: 0px 80px;
+        background-position: top 30% right 30%;
     }
     .f-section {
         justify-content: center;
     }
-    
-  }
+    .f-section .box {
+        margin: 15px 15px;
+    }
+    .featured-products .prod-box {
+        justify-content: center;
+    }
+    .call-to-action {
+        height: 20vh;
+    }
+    .bimbo .banner-box {
+        min-width: 100%;
+        height:30vh;
 
-  @media (max-width:700px) {
-    h1{
-        font-size: 2rem;
     }
-    .hero-section h3 {
-        font-size: 2rem;
+    .bombi  {
+        padding: 0 40px;
     }
-    .call-to-action button {
+    .bombi .banner-box {
+        width: 28%;
+    }
+    .comeandvisit {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:33vh;
+
+    }
+   
+    .comeandvisit .adresa input {
+        width:400px;
+
+    }
+}
+@media (max-width: 477px) {
+    .sec-pad {
+        padding: 20px;
+    }
+    .comeandvisit {
+        flex-direction: column;
+        flex-wrap:wrap;
+        height:36vh
+    }
+    .comeandvisit .adresa input {
+        width:250px;
+    }
+    .comeandvisit .adresa input::placeholder {
         font-size:14px;
     }
-    
-  }
-  
-  @media (max-width: 420px) { 
-    body {
-        width: 100vw;
-    }
     .hero-section {
-        text-align:center;
+        padding: 0 20px;
+        background-position: 55%;
     }
-    .hero-section h1 {
-        position:relative;
-        right:35px;
+    .hero-section h3 {
+        font-size:22px;
     }
-
+    .hero-section h1  {
+        font-size: 35px;
+    }
+    .hero-section h1 span {
+        font-size:37px;
+    }
+    .hero-section p {
+        font-size: 16px;
+    }
+    .f-section {
+        justify-content: space-between;
+    }
+    .f-section .box {
+        width:150px;
+        font-size:14px;
+        margin: 0 0 15px 0;
+    }
+    .featured-products .prod-box  {
+        width:100%;
+    }
+    .call-to-action {
+        height: 35vh;
+    }
+    .call-to-action h2 {
+        font-size:26px;
+        margin-bottom:10px;
+    }
     .call-to-action h1 {
-        font-size:40px;
+        font-size:35px;
     }
-  }
-  .call-to-action h2 {
-    font-size:30px;
+    .call-to-action button {
+        font-size:10px;
+        display:flex;
+        align-items: center;
+        text-align:center;
+        padding:10px;
+    }
+    .bimbo .banner-box {
+        height: 53vh;
+        
+    }
+    .bimbo .banner-box:nth-child(2) {
+        margin-top: 20px;
+    }
+    .bombi {
+        padding: 0 20px;
+    }
+    .bombi .banner-box {
+        width:100%;
+    }
 }
-

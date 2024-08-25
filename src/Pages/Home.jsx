@@ -6,7 +6,7 @@ import sectionImage1 from "../assets/images/feature_section_1.png";
 import sectionImage2 from "../assets/images/feature_section_2.png";
 import sectionImage3 from "../assets/images/feature_section_3.png";
 import sectionImage4 from "../assets/images/feature_section_4.png";
-import heropic from "../assets/images/hero3.jpg"
+import heropic from "../assets/images/hero4.png"
 import productImage1 from "../assets/images/clothes1.jpg";
 import productImage2 from "../assets/images/clothes2.jpg";
 import productImage3 from "../assets/images/clothes3.jpg";
@@ -21,6 +21,11 @@ import logo from "../assets/images/brand.logo.png"
 import payPic from "../assets/images/pay.png";
 import AppStore from "../assets/images/appstore.jpg";
 import TrgPlay from "../assets/images/trgplay.jpg";
+import summer1 from "../assets/images/ronald-cuyan-AJgFLjnmSs4-unsplash.jpg";
+import summer2 from "../assets/images/bannercollection.jpg";
+import summer3 from "../assets/images/liana-mikah-loo1hKZmZ3E-unsplash.jpg";
+import summer4 from "../assets/images/bannercollectio4.jpg";
+
 function Home() {
 
     const fetatureData = [
@@ -108,14 +113,15 @@ function Home() {
     ]
     const heroBackground = {
        backgroundImage : `url(${heropic})`,
-       height: '110vh',
+       height: '90vh',
+       width: "100%",
        display: 'flex',
        flexDirection: 'column',
        gap: '20px',
        backgroundSize: 'cover',
-       backgroundPosition: 'top 10% right: 0%',
+       backgroundPosition: 'top 25% right: 0%',
        backgroundRepeat: 'no-repeat',
-       padding: '0 80px',
+       padding: '0 40px',
        alignItems: 'flex-start',
        justifyContent: 'center',
        color: '#000000',
@@ -127,12 +133,27 @@ function Home() {
     const bannerImageBackground = {
         backgroundImage: `url(${summer})`
     }
+    const bannerImageBackground1 = {
+        backgroundImage: `url(${summer1})`
+    }
+    const bannerImageBackground2 = {
+        backgroundImage: `url(${summer2})`
+    }
+    const bannerImageBackground3 = {
+        backgroundImage: `url(${summer3})`
+    }
+    const bannerImageBackground4 = {
+        backgroundImage: `url(${summer4})`
+    }
     return (
       <>
 <section class="hero-section" style={heroBackground}>
-<h3>Nova Izdanja, Svake Sezone</h3>
-<h1>Redefinirajte Svoj Stil Danas</h1>
-<p>Istražite našu pažljivo odabranu kolekciju i pronađite komade koji čine svaki outfit nezaboravnim.</p>
+<h3>Zamjenite Staro za Novo</h3>
+<h1>
+        Super popusti<br></br><span> Na sve proizvode</span>
+</h1>
+<p>Iskoristite priliku i obnovite svoju kolekciju s nevjerojatnim ponudama.<br></br> Pronađite vrhunske proizvode uz značajne uštede.</p>
+
 
 <button class="animated-button">
   <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
@@ -150,7 +171,7 @@ function Home() {
 </button>
 
 </section>
-<section className="f-section">
+<section className="f-section sec-pad">
         {fetatureData.map((card) => {
             return (
             <div class="box" key={card.id}>
@@ -183,7 +204,7 @@ function Home() {
                    </div>
                    <p>{product.price}</p>
                </div>
-               <a href="#"><i class="cart-btn" ><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#088178"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></i></a>
+               <a href="#"><i class="fa-solid fa-cart-shopping cart-btn" ></i></a>
            </div>
             )
         })}
@@ -218,7 +239,7 @@ function Home() {
                    </div>
                    <p>{product.price}</p>
                </div>
-               <a href="#"><i class="cart-btn" ><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#088178"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></i></a>
+               <a href="#"><i class="fa-solid fa-cart-shopping cart-btn" ></i></a>
            </div>
             )
         })}
@@ -233,7 +254,7 @@ function Home() {
     <button className="box-btn">Pogledaj</button>
     </div>
 
-    <div className="banner-box" style={bannerImageBackground}>
+    <div className="banner-box" style={bannerImageBackground1}>
     <h2>Lorem ipsum</h2>
     <h1>Lorem ipsum dolor sit</h1>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -241,19 +262,19 @@ function Home() {
     </div>
 </section>
 <section className=" bombi">
-    <div className="banner-box small-box" style={bannerImageBackground}>
+    <div className="banner-box small-box" style={bannerImageBackground2}>
     <h2>Lorem ipsum</h2>
     
     <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
     </div>
 
-    <div className="banner-box small-box" style={bannerImageBackground}>
+    <div className="banner-box small-box" style={bannerImageBackground3}>
     <h2>Lorem ipsum</h2>
   
     <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
     </div>
 
-    <div className="banner-box small-box" style={bannerImageBackground}>
+    <div className="banner-box small-box" style={bannerImageBackground4}>
     <h2>Lorem ipsum</h2>
 
     <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
@@ -276,7 +297,7 @@ function Home() {
     <img className="logo" src={logo} alt="brand_logo" />
     <h2>Kontakt</h2>
     <p><strong>Adresa:</strong> Draškovićeva ul. 44, 10000, Zagreb</p>
-    <p><strong>Mobitel:</strong>0957482199</p>
+    <p><strong>Mobitel:</strong> 0957482199</p>
     <p><strong>Sati:</strong> 06:00 - 24:00 Pon - Ned </p>
     <div className="follow">
         <h4>Pratite nas</h4>
