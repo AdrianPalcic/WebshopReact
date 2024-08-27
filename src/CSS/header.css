@@ -6,9 +6,18 @@
 }
 .navbar li {
     padding: 0 20px;
+    border:none;
+    text-decoration: none;
 }
 .navbar li a {
     transition: 0.3s ease;
+    border:none;
+    text-decoration: none;
+}
+.navbar li a:visited {
+    border: none;
+    text-decoration: none;
+    color:#1a1a1a
 }
 .header {
     display:flex;
@@ -26,8 +35,10 @@
 }
 .header a {
     cursor:pointer;
+  
 }
-.navbar a:hover, .navbar a.active {
+
+.navbar li a:hover, .navbar li a.active {
     color:#088178;
     border-bottom: 1px solid  #088178;
 }

@@ -5,6 +5,7 @@ import Cart from './Pages/Cart';
 import Shop from './Pages/Shop';
 import Header from './Components/Header';
 import "./App.css";
+
 function App() {
 
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="page2" element={<Cart />} />
           <Route path="page3" element={<Shop />} />
+ 
         </Routes>
       </Router>
     </main>

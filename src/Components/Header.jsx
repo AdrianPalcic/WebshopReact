@@ -1,7 +1,6 @@
 import logo from "../assets/images/brand.logo.png"
-
-
-import "./header.css";
+import { Link } from "react-router-dom";
+import "../CSS/header.css"
     function Header() {
 
 const handleClick = () => {
@@ -23,10 +22,10 @@ const handleOtherClick = () => {
                 <div className="left">
                 <a href="#"><img src={logo} alt="brand_logo" /></a>
                     <ul className="navbar">
-                        <li><a className="active">Home</a></li>
+                        <li><Link to="/" className="active">Home</Link></li>
                         <li><a>About</a></li>
                         <li><a>Contact</a></li>
-                        <li><a>Shop</a></li>
+                        <li><Link to="page3">Shop</Link></li>
                         <li><a>Login</a></li>
                     </ul>
                     <ul className="sidebar">
