@@ -1,7 +1,7 @@
 
     function Fsection({data}) {
         return (
-        <section className="f-section sec-pad">
+        <section className="f-section">
             {data.map((card) => {
                 return (
                 <div class="box" key={card.id}>

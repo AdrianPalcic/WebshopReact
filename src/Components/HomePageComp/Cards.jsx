@@ -1,7 +1,7 @@
 
     function Cards({background, background2}) {
         return (
-            <section className="sec-pad bimbo">
+            <section className=" bimbo">
     <div className="banner-box" style={background}>
     <h2>Lorem ipsum</h2>
     <h1>Lorem ipsum dolor sit</h1>

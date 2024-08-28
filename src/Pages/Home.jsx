@@ -1,6 +1,12 @@
 import "../CSS/Home-page.css";
 import "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Banner from "../Components/HomePageComp/CallToAction";
+import Hero from "../Components/HomePageComp/Hero";
+import Fproducts from "../Components/HomePageComp/FeaturedProducts";
+import Visit from "../Components/HomePageComp/Visiti";
+import Novo from "../Components/HomePageComp/Novo";
+import Fsection from "../Components/HomePageComp/F-section";
 import sectionImage1 from "../assets/images/feature_section_1.png";
 import sectionImage2 from "../assets/images/feature_section_2.png";
 import sectionImage3 from "../assets/images/feature_section_3.png";
@@ -24,17 +30,15 @@ import summer1 from "../assets/images/ronald-cuyan-AJgFLjnmSs4-unsplash.jpg";
 import summer2 from "../assets/images/bannercollection.jpg";
 import summer3 from "../assets/images/liana-mikah-loo1hKZmZ3E-unsplash.jpg";
 import summer4 from "../assets/images/bannercollectio4.jpg";
-import Hero from "../Components/HomePageComp/Hero";
-import Fsection from "../Components/HomePageComp/F-section";
-import Fproducts from "../Components/HomePageComp/FeaturedProducts";
-import Banner from "../Components/HomePageComp/CallToAction";
-import Novo from "../Components/HomePageComp/Novo";
+import { useState } from "react";
 import Cards from "../Components/HomePageComp/Cards";
 import SmallCards from "../Components/HomePageComp/SmallCards";
-import Visit from "../Components/HomePageComp/Visiti";
 import Footer from "../Components/HomePageComp/Footer";
 
+
 function Home() {
+
+    const [value, setValue] = useState("Draškovićeva ul. 44, 10000, Zagreb")
 
     const fetatureData = [
         {
@@ -155,8 +159,7 @@ function Home() {
     }
     return (
       <>
-
-<Hero background={heroBackground}/>
+      <Hero background={heroBackground}/>
 <Fsection data={fetatureData}/>
 <Fproducts data={featuredProductData} text={"Istaknuti Proizvodi"} text2={"Some text with 10 long words"}/>
 <Banner background={bannerBackground} />
@@ -165,6 +168,7 @@ function Home() {
 <SmallCards background={bannerImageBackground2} background2={bannerImageBackground3} background3={bannerImageBackground4} />
 <Visit />
 <Footer logo={logo} store={AppStore} store2={TrgPlay} pay={payPic} />
+
 
 </>
     )

@@ -1,7 +1,7 @@
 
     function Footer({logo, store, store2, pay}) {
         return (
-            <footer className="sec-pad">
+            <footer>
     <div className="col">
     <img className="logo" src={logo} alt="brand_logo" />
     <h2>Kontakt</h2>
