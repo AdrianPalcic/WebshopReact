@@ -54,7 +54,14 @@
 .search-cart {
     display:flex;
     align-items:center;
-    gap:10px;
+    gap:20px;
+    font-size:18px;
+}
+.search-cart i {
+   color: #1a1a1a;
+}
+.search-cart i:hover {
+    color:#088178;
 }
 
 
@@ -63,7 +70,8 @@ img {
     height:100%;
 }
 .menu {
-    display: none;
+    display: flex;
+    cursor:pointer;
 }
 /* From Uiverse.io by garerim */ 
 .container-input {
@@ -78,6 +86,7 @@ img {
     transition: all .2s ease-in-out;
     outline: none;
     opacity: 0.8;
+    font: size 18px;
   }
   
   .container-input svg {
@@ -86,6 +95,7 @@ img {
     left: 10px;
     transform: translate(0, -50%);
   }
+ 
   
   .input:focus {
     opacity: 1;
@@ -98,21 +108,40 @@ img {
     top: 0;
     right: -14px;
     height: 100vh;
-    width: 260px;
+    width: 290px;
     z-index: 999;
-    background-color: hsla(0, 0%, 30%, 0.549);
+    background-color: hsl(0, 0%, 75%);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
+    border: 1px solid white;
+    display: flex;
     flex-direction: column;
+    border-radius:4px;
+    pointer-events: auto;
   }
+
   
   .sidebar li {
     cursor: pointer;
-    padding: 10px;
+    padding: 20px 10px;
     list-style: none;
     width: 100%;
+    font-size:20px;
   }
+
+  .sidebar li:hover {
+    background-color: #088178;
+
+  }
+  .sidebar li:hover a, .sidebar li:hover i {
+    color:white;
+  }
+
+  .sidebar li a.active {
+    color: #088178;
+
+  }
+
 
   @media (max-width: 1000px) {
     .menu {
@@ -121,9 +150,15 @@ img {
     .navbar {
         display:none;
     }
+    .sidebar {
+        width:50vw;
+    }
   }
 
   @media (max-width: 480px) {
+    .sidebar {
+        width:55vw;
+    }
     .header {
         padding: 10px 30px;
        
@@ -134,11 +169,10 @@ img {
         justify-content: end;
     }
     .search-cart {
-
         width:100vw;
         justify-content: end;
     }
-    .search-cart input, svg{
+    .search-cart input{
         display:none;
     }
   }

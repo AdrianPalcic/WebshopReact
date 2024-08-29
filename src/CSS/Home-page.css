@@ -1,7 +1,10 @@
 body {
     background-color: white;
 }
-
+a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
 .sec-pad {
     padding: 40px 80px;
 }
@@ -123,7 +126,7 @@ p {
   
   
   .f-section .box {
-    width: 200px;
+    width: 220px;
     text-align:center;
     padding: 10px 10px;
     box-shadow: 20px 20px 30px rgba(0,0,0, 0.03);
