@@ -114,7 +114,7 @@ img {
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     border: 1px solid white;
-    display: flex;
+    display: none;
     flex-direction: column;
     border-radius:4px;
     pointer-events: auto;
