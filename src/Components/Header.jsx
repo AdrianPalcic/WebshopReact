@@ -90,9 +90,10 @@ function Header() {
                         </Link>
                     </li>
                     <li>
-                        <a className={activeItem === "Login" ? "active" : ""}>
+                        <Link to="page4"
+                         className={activeItem === "Login" ? "active" : ""}>
                             Login
-                        </a>
+                        </Link>
                     </li>
                 </ul>
                 <ul className="sidebar" onClick={handleNavClick}>
@@ -126,9 +127,10 @@ function Header() {
                         </Link>
                     </li>
                     <li>
-                        <a className={activeItem === "Login" ? "active" : ""}>
+                    <Link to="page4"
+                         className={activeItem === "Login" ? "active" : ""}>
                             Login
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>

@@ -443,6 +443,7 @@ p {
     align-items: center;
 }
 .comeandvisit .location i {
+    cursor:pointer;
     font-size:80px;
     margin-bottom:15px;
     color:red;
