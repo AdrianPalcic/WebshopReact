@@ -1,4 +1,4 @@
-import heropic from "../assets/images/shophero.jpg";
+import heropic from "../assets/images/shop-hero.jpg.jpeg";
 import ShopHero from "../Components/shopComp/ShopHero";
 import productImage1 from "../assets/images/clothes1.jpg";
 import productImage2 from "../assets/images/clothes2.jpg";
