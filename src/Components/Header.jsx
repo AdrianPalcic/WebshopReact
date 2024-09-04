@@ -13,7 +13,9 @@ function Header() {
             setActiveItem("Home");
         } else if (path === "/page3") {
             setActiveItem("Shop");
-        } 
+        } else {
+            setActiveItem("");
+        }
     }, [location]);
 
     const handleClick = () => {
@@ -72,14 +74,14 @@ function Header() {
                         </Link>
                     </li>
                     <li>
-                        <a className={activeItem === "About" ? "active" : ""}>
+                        <Link to="page5" className={activeItem === "About" ? "active" : ""}>
                             About
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className={activeItem === "Contact" ? "active" : ""}>
+                        <Link to="page6" className={activeItem === "Contact" ? "active" : ""}>
                             Contact
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <Link 
@@ -109,14 +111,14 @@ function Header() {
                         </Link>
                     </li>
                     <li>
-                        <a className={activeItem === "About" ? "active" : ""}>
+                        <Link to="page5" className={activeItem === "About" ? "active" : ""}>
                             About
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className={activeItem === "Contact" ? "active" : ""}>
+                        <Link to="page6" className={activeItem === "Contact" ? "active" : ""}>
                             Contact
-                        </a>
+                        </Link>
                     </li>
                     <li>
                          <Link 

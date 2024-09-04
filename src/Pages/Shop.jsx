@@ -18,13 +18,16 @@ import TrgPlay from "../assets/images/trgplay.jpg";
 import Visit from "../Components/HomePageComp/Visiti";
 import "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { useNavigate } from 'react-router-dom';
+import ProductDetails from './ProductDetails';
 
 
 function Shop() {
 
-    const handleClick = () => {
-        console.log("clicked");
-       
+    const navigate = useNavigate();
+
+    const handleClick = (product) => {
+      navigate(`/product/${product.id}`, { state: product});
     }
 
     const Products = [
@@ -34,6 +37,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage1,
+            desc: "lorem ipsum dolorem sit",
         },
         {
             id: 2,
@@ -41,6 +45,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage2,
+            desc: "lorem ipsum dolorem sit",
         },
         {
             id: 3,
@@ -48,6 +53,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage3,
+            desc: "lorem ipsum dolorem sit",
         },
         {
             id: 4,
@@ -55,6 +61,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage4,
+            desc: "lorem ipsum dolorem sit",
         },
         {
             id: 5,
@@ -62,6 +69,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage5,
+            desc: "lorem ipsum dolorem sit",
         },
         {
             id: 6,
@@ -69,6 +77,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage6,
+            desc: "lorem ipsum dolorem sit",
         },
         {
             id: 7,
@@ -76,6 +85,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage7,
+            desc: "lorem ipsum dolorem sit",
         },
         {
             id: 8,
@@ -83,6 +93,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage8,
+            desc: "lorem ipsum dolorem sit",
         },
         {
             id: 9,
@@ -90,6 +101,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage1,
+            desc: "lorem ipsum dolorem sit",
         },
         {
             id: 10,
@@ -97,6 +109,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage2,
+            desc: "lorem ipsum dolorem sit",
         },
         {
             id: 11,
@@ -104,6 +117,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage3,
+            desc: "lorem ipsum dolorem sit",
         },
         {
             id: 12,
@@ -111,6 +125,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage4,
+            desc: "lorem ipsum dolorem sit",
         },
         {
             id: 13,
@@ -118,6 +133,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage5,
+            desc: "lorem ipsum dolorem sit",
         },
         {
             id: 14,
@@ -125,6 +141,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage6,
+            desc: "lorem ipsum dolorem sit",
         },
         {
             id: 15,
@@ -132,6 +149,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage7,
+            desc: "lorem ipsum dolorem sit",
         },
         {
             id: 16,
@@ -139,6 +157,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage8,
+            desc: "lorem ipsum dolorem sit",
         },
     ]
 

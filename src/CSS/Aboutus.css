@@ -1,0 +1,66 @@
+.hero h1 {
+    font-size:50px;
+    
+}
+.hero p  {
+    font-size: 22px;
+}
+.hero {
+    margin-bottom: 20px;
+}
+.onama .left img {
+    width:600px;
+}
+.onama {
+    padding: 40px 80px;
+    display:flex;
+    overflow: none;
+    flex-wrap:wrap;
+}
+.onama div {
+    flex:1;
+   
+}
+.onama h2 {
+    font-size:50px;
+    margin-bottom: 20px;
+}
+.onama .right p {
+    font-size: 24px;
+    font-weight:300;
+    line-height: 27px;
+
+}
+
+@media (max-width: 799px) {
+    .onama .left {
+        margin-bottom: 40px;
+    }
+    .onama .right h2 {
+        text-align: center;
+    }
+}
+@media (max-width: 477px) {
+    .onama {
+        justify-content: center;
+        padding:20px;
+    }
+    .onama div {
+        flex:0;
+    }
+    .onama .left { 
+        border:1px solid black;
+    }
+    .onama .left img { 
+        width: 300px;
+    }
+    .onama .right {
+        flex:1;
+    }
+    .onama .right h2 {
+        font-size:40px;
+    }
+    .onama .right p {
+        font-size:18px;
+    }
+}

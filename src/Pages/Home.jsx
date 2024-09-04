@@ -7,10 +7,10 @@ import Fproducts from "../Components/HomePageComp/FeaturedProducts";
 import Visit from "../Components/HomePageComp/Visiti";
 import Novo from "../Components/HomePageComp/Novo";
 import Fsection from "../Components/HomePageComp/F-section";
-import sectionImage1 from "../assets/images/feature_section_1.png";
-import sectionImage2 from "../assets/images/feature_section_2.png";
-import sectionImage3 from "../assets/images/feature_section_3.png";
-import sectionImage4 from "../assets/images/feature_section_4.png";
+import sectionImage1 from "../assets/images/Feature_maybe.jpg";
+import sectionImage2 from "../assets/images/Feature_maybe2.jpg";
+import sectionImage3 from "../assets/images/Feature_maybe3.jpg";
+import sectionImage4 from "../assets/images/Feature_maybe4.jpg";
 import heropic from "../assets/images/hero4.png"
 import productImage1 from "../assets/images/clothes1.jpg";
 import productImage2 from "../assets/images/clothes2.jpg";
@@ -71,6 +71,7 @@ function Home() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage1,
+            desc: "Lorem ipsum dolorem",
         },
         {
             id: 2,
@@ -78,6 +79,7 @@ function Home() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage2,
+            desc: "Lorem ipsum dolorem",
         },
         {
             id: 3,
@@ -85,6 +87,7 @@ function Home() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage3,
+            desc: "Lorem ipsum dolorem",
         },
         {
             id: 4,
@@ -92,6 +95,7 @@ function Home() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage4,
+            desc: "Lorem ipsum dolorem",
         },
         {
             id: 5,
@@ -99,6 +103,7 @@ function Home() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage5,
+            desc: "Lorem ipsum dolorem",
         },
         {
             id: 6,
@@ -106,6 +111,7 @@ function Home() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage6,
+            desc: "Lorem ipsum dolorem",
         },
         {
             id: 7,
@@ -113,6 +119,7 @@ function Home() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage7,
+            desc: "Lorem ipsum dolorem",
         },
         {
             id: 8,
@@ -120,6 +127,7 @@ function Home() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage8,
+            desc: "Lorem ipsum dolorem",
         },
      
     ]

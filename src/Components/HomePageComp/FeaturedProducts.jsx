@@ -1,13 +1,13 @@
 
     function Fproducts({data, text, text2, click}) {
         return (
-            <section className="featured-products" onClick={click}>
+            <section className="featured-products">
     <h2>{text}</h2>
     <p>{text2}</p>
     <div className="prod-box">
         {data.map((product) => {
             return (
-               <div className="pro" key={product.id}>
+               <div className="pro" key={product.id} onClick={() => click(product)}>
                 
                <img src={product.img}></img>
                <div className="desc">

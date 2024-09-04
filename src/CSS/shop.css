@@ -1,8 +1,10 @@
-h1 {
+.shop-hero h1 {
     font-size:40px;
+    color: white;
 }
-p {
+.shop-hero p {
     font-size: 20px;
+    color: #1a1a1a;
 }
 .sec-pad {
     padding:40px 80px;
