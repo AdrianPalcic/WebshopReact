@@ -13,6 +13,12 @@ function Header() {
             setActiveItem("Home");
         } else if (path === "/page3") {
             setActiveItem("Shop");
+        } else if (path === "/page4") {
+            setActiveItem("Login")
+        } else if(path === "/page5") {
+            setActiveItem("About") 
+        } else if (path === "/page6") {
+            setActiveItem("Contact")
         } else {
             setActiveItem("");
         }
