@@ -16,7 +16,7 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
     padding: 20px 30px;
-    margin-top:20px;
+    margin-top:50px;
   }
   
   .title {
@@ -163,4 +163,28 @@
   }
 #register {
     height: 640px;
+}
+@media (max-width: 1100px) {
+  .container {
+    height:100vh;
+  }
+}
+@media (max-width: 830px) {
+  .container {
+    margin-bottom:10px;
+    height:70vh;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    height:100vh;
+   }
+}
+@media (max-width: 477px) {
+  .form-container {
+    margin-top: 20px;
+  }
+  .container {
+    height:100vh;
+  }
 }

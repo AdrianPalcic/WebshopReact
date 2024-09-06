@@ -166,6 +166,9 @@ p {
     flex-wrap:wrap;
 
 }
+.featured-products i {
+    color:gold;
+}
 .pro {
     display:flex;
     flex-wrap:wrap;
@@ -492,7 +495,7 @@ footer p {
     margin-bottom:10px;
 }
 footer a {
-    font-size:14px;
+    font-size:18px;
     
     text-decoration: none;
     color: #1a1a1a;

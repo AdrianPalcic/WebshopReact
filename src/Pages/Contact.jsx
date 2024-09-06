@@ -2,6 +2,12 @@ import heropic from "../assets/images/about-contact_hero.jpg";
 import "../CSS/Contact.css";
 import "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Visit from "../Components/HomePageComp/Visiti";
+import logo from "../assets/images/brand.logo.png"
+import payPic from "../assets/images/pay.png";
+import AppStore from "../assets/images/appstore.jpg";
+import TrgPlay from "../assets/images/trgplay.jpg";
+import Footer from "../Components/HomePageComp/Footer";
 function Contact() {
 
 const heroBackground = {
@@ -21,7 +27,7 @@ const heroBackground = {
     return (
         <>
              <section 
-            className="hero" style={heroBackground}>
+            className="heroe" style={heroBackground}>
                 <h1>#Kontaktiraj_nas</h1>
                 <p>Recite nam svoja mišljenja</p>
             </section>
@@ -53,7 +59,7 @@ const heroBackground = {
                 
                         <textarea name="" id="" cols="30" rows="10" required placeholder="Vaša Poruka"></textarea>
                         <button>Pošalji</button>
-                    </form>
+                    </form> 
                 </div>
                 <div className="form-right">
                     <div className="person">
@@ -85,6 +91,7 @@ const heroBackground = {
                     </div>
                 </div>
             </section>
+            <Footer logo={logo} store={AppStore} store2={TrgPlay} pay={payPic} />
         </>
     );
 }

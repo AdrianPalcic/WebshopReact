@@ -1,0 +1,134 @@
+ .small-img {
+    height:130px;
+    width:130px;
+    border: 1px solid hsl(0, 0%, 90%);
+    cursor:pointer;
+}
+.big-img-cont {
+    height:500px;
+    width:550px;
+    margin-bottom:10px;
+}
+.big-img {
+    height:100%;
+    width:100%;
+    cursor:pointer;
+}
+.productDetails {
+    display:flex;
+    flex-wrap:wrap;
+    padding: 40px 80px;
+}
+.small-product-imgs {
+
+    display:flex;
+    justify-content: space-between;
+}
+
+.product-right {
+
+    flex:1;
+    padding: 40px;
+}
+.product-right .made {
+    font-size:20px;
+    margin-bottom:20px;
+
+}
+.product-right h3 {
+    font-size:30px;
+    margin-bottom: 20px;
+}
+.product-right h2 {
+    font-size: 40px;
+    font-weight:400;
+    margin-bottom:10px;
+}
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom : 20px;
+  }
+  
+  select:focus {
+    border-color: #088708;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  select option {
+    padding: 10px;
+
+  }
+  
+  select option:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  .addToCartContainer input  {
+    padding:5px;
+    height:30px;
+    font-size:20px;
+    width:60px;
+    margin: 0 10px 20px 0;
+  }
+  .addToCartContainer button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 0 !important;
+    outline: 0 !important;
+    background: teal;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size:18px;
+  }
+  .addToCartContainer button:active {
+    box-shadow: none;
+  }
+  .addToCartContainer button:hover {
+    background: #088;
+  }
+   .addToCartContainer  {
+    margin-bottom:20px;
+   }
+  
+  .product-details h4 {
+    font-size:30px;
+    font-weight:500;
+    margin-bottom:15px;
+  }
+  .product-details p {
+    font-weight:300;
+    font-size: 26px;
+
+    word-wrap: break-word;
+  }
+
+  @media (max-width: 941px) {
+    .productDetails {
+        justify-content: center;
+    }
+    .product-right {
+        width:100%;
+    }
+  }
+
+  @media (max-width: 570px) {
+    .product-left {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .big-img-cont {
+        height:350px;
+        width:350px;
+        margin-bottom: 10px;
+    }
+    .small-img {
+        width:80px;
+        height:80px;
+    }
+  }

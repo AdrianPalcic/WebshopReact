@@ -1,6 +1,7 @@
-
+.heroe h1  {
+    font-size:50px;
+}
     .contact {
-
         display:flex;
         padding:40px 80px;
         justify-content: center;
@@ -49,7 +50,10 @@
         padding: 40px 40px;
         width:80vw;
         margin-left:150px;
+        margin-bottom: 30px;
         border-radius: 7px;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
     .formER .form-left {
         display:flex;
@@ -136,3 +140,77 @@
     padding:3px;
     font-weight: 300;
   }
+  @media (max-width: 799px) {
+    .contact .left {
+        text-align:center;
+    }
+    .contact .left .info p {
+        width:100%;
+        text-align: center;
+    
+    }
+    .contact .right {
+        text-align:center;
+    }
+    .contact .right iframe {
+        height:300px;
+    }
+    .formER  {
+        margin-left: 80px;
+        flex-wrap:wrap;
+    }
+    .formER .form-left {
+        flex:1;
+    }
+    .formER .form-right {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left:30px;
+    }
+    .formER .form-right .person {
+        flex-direction:column;
+    }
+  }
+  @media (max-width: 477px) {
+    .heroe   h1 {
+        font-size:45px;
+    }
+    .heroe p {
+        font-size: 22px;
+    }
+    .contact {
+        
+        padding:20px;
+    }
+    .contact .left {
+        padding: 0;
+        width:100%;
+        margin:0;
+    }
+    .contact .left h1 {
+        font-size: 30px;
+    }
+    .contact .right iframe {
+        width:300px;
+    }
+    .formER {
+        width:95%;
+        margin:0 0 30px 10px;
+        padding: 10px 5px 10px 5px;
+    }
+    .formER .form-left {
+        flex:1;
+    }
+    .formER .form-right {
+        flex-direction: column;
+        margin:0;
+    }
+    .formER .form-left form button {
+        width:100%;
+    }
+    .formER .form-right {
+
+        text-align: center;
+    }
+  }
+

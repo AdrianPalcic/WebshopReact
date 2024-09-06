@@ -37,7 +37,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage1,
-            desc: "lorem ipsum dolorem sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, fuga deserunt cum numquam quaerat labore omnis aliquam sint voluptate aliquid autem, quis explicabo! Asperiores, numquam dolore ipsam at ut delectus!",
         },
         {
             id: 2,
@@ -45,7 +45,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage2,
-            desc: "lorem ipsum dolorem sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, fuga deserunt cum numquam quaerat labore omnis aliquam sint voluptate aliquid autem, quis explicabo! Asperiores, numquam dolore ipsam at ut delectus!",
         },
         {
             id: 3,
@@ -53,7 +53,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage3,
-            desc: "lorem ipsum dolorem sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, fuga deserunt cum numquam quaerat labore omnis aliquam sint voluptate aliquid autem, quis explicabo! Asperiores, numquam dolore ipsam at ut delectus!",
         },
         {
             id: 4,
@@ -61,7 +61,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage4,
-            desc: "lorem ipsum dolorem sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, fuga deserunt cum numquam quaerat labore omnis aliquam sint voluptate aliquid autem, quis explicabo! Asperiores, numquam dolore ipsam at ut delectus!",
         },
         {
             id: 5,
@@ -69,7 +69,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage5,
-            desc: "lorem ipsum dolorem sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, fuga deserunt cum numquam quaerat labore omnis aliquam sint voluptate aliquid autem, quis explicabo! Asperiores, numquam dolore ipsam at ut delectus!",
         },
         {
             id: 6,
@@ -77,7 +77,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage6,
-            desc: "lorem ipsum dolorem sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, fuga deserunt cum numquam quaerat labore omnis aliquam sint voluptate aliquid autem, quis explicabo! Asperiores, numquam dolore ipsam at ut delectus!",
         },
         {
             id: 7,
@@ -85,7 +85,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage7,
-            desc: "lorem ipsum dolorem sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, fuga deserunt cum numquam quaerat labore omnis aliquam sint voluptate aliquid autem, quis explicabo! Asperiores, numquam dolore ipsam at ut delectus!",
         },
         {
             id: 8,
@@ -93,7 +93,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage8,
-            desc: "lorem ipsum dolorem sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, fuga deserunt cum numquam quaerat labore omnis aliquam sint voluptate aliquid autem, quis explicabo! Asperiores, numquam dolore ipsam at ut delectus!",
         },
         {
             id: 9,
@@ -101,7 +101,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage1,
-            desc: "lorem ipsum dolorem sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, fuga deserunt cum numquam quaerat labore omnis aliquam sint voluptate aliquid autem, quis explicabo! Asperiores, numquam dolore ipsam at ut delectus!",
         },
         {
             id: 10,
@@ -109,7 +109,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage2,
-            desc: "lorem ipsum dolorem sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, fuga deserunt cum numquam quaerat labore omnis aliquam sint voluptate aliquid autem, quis explicabo! Asperiores, numquam dolore ipsam at ut delectus!",
         },
         {
             id: 11,
@@ -117,7 +117,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage3,
-            desc: "lorem ipsum dolorem sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, fuga deserunt cum numquam quaerat labore omnis aliquam sint voluptate aliquid autem, quis explicabo! Asperiores, numquam dolore ipsam at ut delectus!",
         },
         {
             id: 12,
@@ -125,7 +125,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage4,
-            desc: "lorem ipsum dolorem sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, fuga deserunt cum numquam quaerat labore omnis aliquam sint voluptate aliquid autem, quis explicabo! Asperiores, numquam dolore ipsam at ut delectus!",
         },
         {
             id: 13,
@@ -133,7 +133,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage5,
-            desc: "lorem ipsum dolorem sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, fuga deserunt cum numquam quaerat labore omnis aliquam sint voluptate aliquid autem, quis explicabo! Asperiores, numquam dolore ipsam at ut delectus!",
         },
         {
             id: 14,
@@ -141,7 +141,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage6,
-            desc: "lorem ipsum dolorem sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, fuga deserunt cum numquam quaerat labore omnis aliquam sint voluptate aliquid autem, quis explicabo! Asperiores, numquam dolore ipsam at ut delectus!",
         },
         {
             id: 15,
@@ -149,7 +149,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage7,
-            desc: "lorem ipsum dolorem sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, fuga deserunt cum numquam quaerat labore omnis aliquam sint voluptate aliquid autem, quis explicabo! Asperiores, numquam dolore ipsam at ut delectus!",
         },
         {
             id: 16,
@@ -157,7 +157,7 @@ function Shop() {
             Title: "Shrek 5 T-Shirt",
             price: "$69",
             img: productImage8,
-            desc: "lorem ipsum dolorem sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, fuga deserunt cum numquam quaerat labore omnis aliquam sint voluptate aliquid autem, quis explicabo! Asperiores, numquam dolore ipsam at ut delectus!",
         },
     ]
 
