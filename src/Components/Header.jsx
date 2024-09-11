@@ -19,10 +19,15 @@ function Header() {
             setActiveItem("About") 
         } else if (path === "/page6") {
             setActiveItem("Contact")
+        } else if (path === "/page2") {
+                setActiveItem("Cart")
         } else {
             setActiveItem("");
         }
     }, [location]);
+
+    const teal = "#0097A7";
+
 
     const handleClick = () => {
         const menu = document.querySelector(".sidebar");
@@ -143,17 +148,13 @@ function Header() {
                 </ul>
             </div>
             <div className="search-cart">
-                <div className="container-input">
-                    <input
-                        type="text"
-                        placeholder="Search"
-                        name="text"
-                        className="input"
-                    />
-                </div>
-                <a href="#">
-                    <i className="fa-solid fa-cart-shopping cart-btn"></i>
-                </a>
+               
+                    <Link 
+                    to="page2">
+                    <i
+                        style={activeItem === "Cart" ? { color: teal } : {}}
+                    className="fa-solid fa-cart-shopping cart-btn"></i>
+                    </Link>
                 <svg
                     onClick={handleClick}
                     className="menu"

@@ -2,7 +2,7 @@ import heropic from "../assets/images/about-contact_hero.jpg";
 import "../CSS/Contact.css";
 import "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Visit from "../Components/HomePageComp/Visiti";
+
 import logo from "../assets/images/brand.logo.png"
 import payPic from "../assets/images/pay.png";
 import AppStore from "../assets/images/appstore.jpg";

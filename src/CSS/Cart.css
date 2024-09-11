@@ -1,0 +1,138 @@
+.product-table {
+    padding:20px;
+    overflow-x: auto;
+    
+}
+.product-table table{
+    width:100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+.product-table table img {
+    width:100px;
+    height:100px;
+
+}
+.product-table table td:nth-child(1) {
+    width:100px;
+    text-align: center;
+}
+.product-table table td:nth-child(2) {
+    width:150px;
+    text-align: center;
+}
+.product-table table td:nth-child(3) {
+    width:250px;
+    text-align: center;
+}
+.product-table table td:nth-child(4),
+.product-table table td:nth-child(5),
+.product-table table td:nth-child(6) {
+    width:150px;
+    text-align: center;
+}
+.product-table table td:nth-child(5) input {
+    width:70px;
+    padding:10px 5px 10px 15px;
+
+}
+.product-table table thead {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+.product-table table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size:16px;
+    padding: 18px 0;
+}
+.product-table table tbody tr td {
+    padding-top:15px;
+}
+.product-table table tbody  td {
+    font-size:18px;
+}
+.kuponITotal {
+    padding:40px 80px;
+    display:flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+.kuponITotal .kupon {
+    width:50%;
+    margin-bottom:30px;
+}
+
+.kuponITotal .kupon, .total h3 {
+    padding-bottom:  20px;
+
+}
+.kuponITotal .kupon input {
+    padding: 10px 20px;
+    outline: none;
+    width:60%;
+    margin-right: 10px;
+    border:1px solid #e2e9e1;
+}
+.kuponITotal .kupon button {
+    background-color: #088178;
+    color:white;
+    padding:12px 20px;
+    border:none;
+}
+.kuponITotal .total {
+    width:50%;
+    margin-bottom:30px;
+    border: 1px solid #e2e9e1;
+    padding:30px;
+}
+
+.kuponITotal .total table {
+    border-collapse: collapse;
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.kuponITotal .total table  td {
+    width:50%;
+    border: 1px solid #e2e9e1;
+    padding:10px;
+    font-size: 16px;
+}
+.kupi {
+    padding: 10px 15px;
+    border-radius: 7px;
+    border: 0 !important;
+    outline: 0 !important;
+    background: teal;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size:16px;
+    width:70%;
+    height:40px;
+}
+.kupi:active {
+    box-shadow: none;
+}
+.kupi:hover {
+    background: #088;
+}
+
+
+@media (max-width: 480px) {
+    .kuponITotal {
+        flex-direction: column;
+        padding:20px;
+    }
+    .kuponITotal .kupon {
+        width:100%;
+        text-align: center;
+    }
+    .kuponITotal .total {
+        padding:20px;
+        width: 100%;
+    }
+}

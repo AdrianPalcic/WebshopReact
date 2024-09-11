@@ -117,6 +117,9 @@ select {
   }
 
   @media (max-width: 570px) {
+    .productDetails {
+      padding: 20px;
+    }
     .product-left {
         display:flex;
         flex-direction: column;
@@ -127,8 +130,23 @@ select {
         width:350px;
         margin-bottom: 10px;
     }
+    .small-product-imgs {
+      gap:5px;
+    }
     .small-img {
         width:80px;
         height:80px;
     }
+    .product-right {
+      width:100%;
+      padding: 20px 0 20px 20px;
+    }
+    .addToCartContainer {
+      display:flex;
+      flex-direction: column;
+    }
+    .addToCartContainer input {
+      margin-left:5px;
+    }
+     
   }

@@ -19,10 +19,13 @@ import Visit from "../Components/HomePageComp/Visiti";
 import "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { useNavigate } from 'react-router-dom';
-import ProductDetails from './ProductDetails';
+import { useState } from "react";
+
 
 
 function Shop() {
+
+    
 
     const navigate = useNavigate();
 
@@ -30,6 +33,14 @@ function Shop() {
       navigate(`/product/${product.id}`, { state: product});
     }
 
+    const filterBySearchBar = (e) => {
+        const searchValue = e.target.value.toLowerCase();
+        const filteredProducts = Products.filter((product) => product.Title.includes(searchValue));
+       setRoba(filteredProducts);
+
+      
+
+    }
     const Products = [
         {
             id: 1,
@@ -160,6 +171,7 @@ function Shop() {
             desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, fuga deserunt cum numquam quaerat labore omnis aliquam sint voluptate aliquid autem, quis explicabo! Asperiores, numquam dolore ipsam at ut delectus!",
         },
     ]
+    const [roba, setRoba] = useState(Products);
 
     const heroBackground = {
         backgroundImage : `url(${heropic})`,
@@ -177,8 +189,20 @@ function Shop() {
     return (
         <>
        <ShopHero background={heroBackground} />
-        <FeaturedProducts data={Products} click={handleClick}/>
+       <div className="search-container">
+      <div className="search-wrapper">
+        <input
+            onChange={filterBySearchBar}
+          type="search"
+          placeholder="Pretraži proizvode"
+          className="search-input"
+        />
+      </div>
+    </div>
+        <FeaturedProducts data={roba} click={handleClick}/>
+        {roba.length === 0 ? <p className="empty">Nema podudaranja</p> : ""}
         <section className="sec-pad pagination">
+            
         <a href="#">1</a>
         <a href="#">2</a>
         <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
