@@ -23,7 +23,6 @@ function App() {
           <Route path="page3" element={<Shop />} />
           <Route path="page5" element={<About />} />
           <Route path="page6" element={<Contact />} />
-          
           <Route path="page4" element={<LogReg />} />
           <Route path="/product/:id" element={<ProductDetails />} />
         </Routes>
